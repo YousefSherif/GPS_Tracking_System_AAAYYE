@@ -1,0 +1,24 @@
+#include"F:/EE319Kware/inc/tm4c123gh6pm.h"
+#include <stdint.h>
+void SystemInit(){};
+
+void portF_init(void);
+
+uint32_t portF_input(void);
+
+void portF_output(uint32_t data);
+
+double distance_m (double lat1, double long1,double lat2, double long2);	
+
+
+//leds
+void LCD_init(void);
+void LCD_Cmd(unsigned char command);
+void LCD_Data(unsigned char data);
+void LCD_GotoXY(uint8_t _x, uint8_t _y);
+void LCD_WriteString(char *_Str);
+void delay_milli(int n);
+
+
+//UART intitialization
+void UART2Init(void);
